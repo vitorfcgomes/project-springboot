@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.vrzada.webservices.entities.User;
 import com.vrzada.webservices.repositories.UserRepository;
+import com.vrzada.webservices.services.exceptions.ResourceNotFoundException;
 
 @Service //registra a classe como um componente de serviço do Spring
 public class UserService {
@@ -20,7 +21,7 @@ public class UserService {
 	
 	public User findById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(() -> new ResourceNotFoundException(id));
 	}
 	
 	public User insert(User obj) {
