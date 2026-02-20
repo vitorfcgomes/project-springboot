@@ -8,7 +8,7 @@ O sistema permite gerenciamento de usuários, pedidos, produtos e categorias,
 incluindo relacionamento entre entidades (one-to-many, many-to-many e one-to-one),
 tratamento de exceções personalizado e configuração de múltiplos perfis de ambiente.
 
-Arquitetura baseada em camadas (Controller, Service, Repository),
+Arquitetura baseada em camadas (Resource, Service, Repository),
 utilizando Spring Data JPA para persistência e banco relacional para armazenamento.
 Projeto estruturado visando boas práticas, organização e escalabilidade.
 ## 🚀 Tecnologias e Stacks Utilizadas
@@ -32,7 +32,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ### ⚙️ Ferramentas e Build
 - Maven
 - Git & GitHub
-- IntelliJ IDEA (ou IDE utilizada)
+- SpringTools(Ecplise)
 
 ---
 
@@ -65,7 +65,7 @@ manutenibilidade e escalabilidade.
   Recebe as requisições HTTP e retorna respostas no formato JSON.
 
 - services → Contém a lógica de negócio da aplicação.
-  Realiza validações e coordena as operações entre controller e repository.
+  Realiza validações e coordena as operações entre resource e repository.
 
 - repositories → Responsável pelo acesso ao banco de dados,
   utilizando Spring Data JPA.
