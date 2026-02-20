@@ -1,5 +1,7 @@
 # Spring Boot E-commerce API
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/vitorfcgomes/project-springboot/blob/main/LICENSE)
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen)
+![Maven](https://img.shields.io/badge/Maven-Build-red)
 
 # Sobre o projeto
 API REST para gerenciamento de e-commerce desenvolvida com Spring Boot.
@@ -11,6 +13,17 @@ tratamento de exceções personalizado e configuração de múltiplos perfis de 
 Arquitetura baseada em camadas (Resource, Service, Repository),
 utilizando Spring Data JPA para persistência e banco relacional para armazenamento.
 Projeto estruturado visando boas práticas, organização e escalabilidade.
+
+## 🔄 Fluxo da Requisição
+
+<p align="center">
+
+Client → Resource → Service → Repository → Database → JSON Response
+
+</p>
+
+---
+
 ## 🚀 Tecnologias e Stacks Utilizadas
 
 Este projeto foi desenvolvido utilizando as seguintes tecnologias:
@@ -32,7 +45,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ### ⚙️ Ferramentas e Build
 - Maven
 - Git & GitHub
-- SpringTools(Ecplise)
+- Spring Tools (Ecplise)
 
 ---
 
@@ -55,6 +68,7 @@ Este projeto foi desenvolvido com foco em boas práticas,
 organização de código e separação de responsabilidades.
 
 ## 🏗 Estrutura do Projeto
+
 O projeto está organizado seguindo arquitetura em camadas,
 separando responsabilidades para manter organização,
 manutenibilidade e escalabilidade.
@@ -84,7 +98,7 @@ manutenibilidade e escalabilidade.
   padronizando respostas de erro da API.
 
 - config → Configurações da aplicação e classe de seeding
-  para popular o banco de dados em ambiente de teste./
+  para popular o banco de dados em ambiente de teste.
 
 ## 🗂 Modelo de Domínio
 O sistema foi modelado com base em um domínio de e-commerce,
