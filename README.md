@@ -45,7 +45,7 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 ### ⚙️ Ferramentas e Build
 - Maven
 - Git & GitHub
-- Spring Tools (Ecplise)
+- Spring Tools (Eclipse)
 
 ---
 
